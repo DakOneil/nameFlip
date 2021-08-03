@@ -4,31 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel='stylesheet' href='css/style.css'>
     <title>Name Flip</title>
 </head>
 <body>
+    <!-- header and navbar -->
     <header class='container-fluid'>
-        <img src="" alt="">
-        <ul>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Check Out My Portfolio</a></li>
-        </ul>
+        <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="#">NameFlip</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-3">
+                    <a class="nav-link active text-light" aria-current="page" href="#" id='home'>Home</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-light" href="#">About</a>
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-light" href="http://www.dakoneil.netlify.app" target='_blank' tabindex="-1" aria-disabled="true">Check Out My Portfolio Site</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <div class="container-fluid">
-        <div class="container">
-            <input type='text' id='firstName' placeholder='First Name'>
-            <input type="text" id="lastName" placeholder="Last Name">
-        <button id='doTheThing'>Flip the Name!</button>
+    <!-- end header and navbar -->
+
+    <!-- section -->
+    <section id="main" class="container-fluid d-flex justify-content-center col my-4">
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <h1 class="my-3 py-3 mx-auto">Welcome to the NameFlip app!</h1>
+            <p class="my-3 mx-auto text-center py-3">This app is used to show how I always hear people's names when I meet people. For some reason I always flip peoples' names around like this and I have no idea why. Welcome to my brain.</p>
+            <div id="form" class="container my-3 mx-auto d-flex justify-content-center align-items-center">
+                <input type='text' id='firstName' placeholder='First Name' class=" mx-1">
+                <input type="text" id="lastName" placeholder="Last Name" class=" mx-1">
+                <button id='doTheThing' class="">Flip the Name!</button>
+            </div>
+            <div class="container mx-auto d-flex flex-column justify-content-center mt-4">
+                <span id="introToName" class="hidden text-center d-block"></span>
+                <span id="flippedName" class="hidden text-center d-block"></span>
+            </div>
         </div>
-        <div class="container">
-            <span id="flippedName" class="hidden"></span>
-        </div>
-    </div>
-    <footer class='container-fluid'>
+    </section>
+    <!-- end section -->
+
+    <!-- footer -->
+    <footer class='container-fluid mx-auto d-flex justify-content-center fs-9 bg-dark fixed-bottom py-5 text-light'>
         <span>Copyright (but not really) 2021 My Brain, LLC</span>
     </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src='js/main.js'></script>
 </body>
 </html>
