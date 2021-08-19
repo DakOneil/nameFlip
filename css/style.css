@@ -3,6 +3,8 @@
 }
 body {
     padding-top: 70px;
+    background: linear-gradient(#71d4a6, #59bec5);
+    /* background-color: rgba(73, 170, 116, .5) */
     /* background-image: url('/css/images/IMG_4338.jpeg');
     background-size: cover; */
 }
